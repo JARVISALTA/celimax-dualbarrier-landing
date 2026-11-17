@@ -106,7 +106,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
   .trust svg{color:var(--cta)}
 
   /* Help */
-  .help{padding-top:8px}
+  .help{padding-top:8px;padding-bottom:40px}
   .help-box{background:var(--soft);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:16px}
   .help-h b{display:block;font-size:20px;font-weight:800;letter-spacing:-.3px}
   .help-h span{font-size:14px;color:var(--muted)}
@@ -163,7 +163,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
     .trust{gap:12px;margin-top:12px}
     .trust div{flex-direction:row;text-align:left;padding:12px;font-size:13px}
     .trust svg{flex:0 0 auto}
-    .help{padding-top:0}
+    .help{padding-top:0;padding-bottom:72px}
     .help-box{display:grid;grid-template-columns:minmax(220px,1fr) 2.4fr;align-items:center;gap:20px 32px;padding:32px}
     .steps{flex-direction:row}
     .steps li{flex:1 1 0}
@@ -232,17 +232,6 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
   </div>
 </section>
 
-<section class="wrap more">
-  <div class="more-box">
-    <div class="more-t">
-      <b data-i18n="more">Больше продуктов celimax — в одном магазине</b>
-      <span data-i18n="more-sub">Откройте celimax official на Kaspi.kz и выберите свой уход</span>
-    </div>
-    <a class="btn" href="https://l.kaspi.kz/shop/5v3bHzTn3ybKTLe" target="_blank" rel="noopener" data-buy data-cta="bottom">
-      <span data-i18n="all">Смотреть все продукты</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </a>
-  </div>
-</section>
 </main>
 
 <footer>
@@ -317,7 +306,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
       try { document.execCommand('copy'); ok(); } catch(e) {} document.body.removeChild(ta); }
   });
 
-  var dock = document.getElementById('dock'), hero = document.getElementById('hero-buy'), more = document.querySelector('.more');
+  var dock = document.getElementById('dock'), hero = document.getElementById('hero-buy'), more = document.querySelector('footer');
   if (!('IntersectionObserver' in window)) return;
   document.body.classList.add('has-dock');
   var heroVis = true, moreVis = false;
